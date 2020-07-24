@@ -1,6 +1,6 @@
 import React, {component} from 'react';
 
-class Home extends React.Component
+class Projects extends React.Component
 {
     constructor(props)
     {
@@ -13,11 +13,11 @@ class Home extends React.Component
         return (
             <>
                 <a>
-                    This is the home page.
+                    This is the projects page.
                 </a>
             </>
         )
     }
 }
 
-export default Home
+export default Projects

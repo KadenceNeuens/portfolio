@@ -10,7 +10,7 @@
 .App-header {
   font-family: 'IBM Plex Sans', sans-serif;
   width: 60%;
-  margin: 4em, auto;
+  margin: 8em auto 4em;
   color: white;
 }
 
@@ -19,7 +19,7 @@
   font-size: 1em;
   width: 60%;
   min-height: 100vh;
-  margin: 0px, auto;
+  margin: 0px auto;
   color: white;
 }
 
@@ -57,4 +57,11 @@ li a:hover {
 p
 {
   margin: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .App-body
+  {
+    background-color: white;
+  }
 }
