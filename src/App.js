@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Link, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Link, Route, Switch} from 'react-router-dom'
 import Nav from './Components/nav.jsx'
 import Home from './Components/home.jsx'
 import About from './Components/about.jsx'
@@ -20,14 +20,14 @@ function App() {
       </header>
       <div className="App-body">
         <Switch>
-            <Route path="/" component={Home} exact />
-            <Route path="/about" component={About} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/art" component={Art} />
-            <Route path="/music" component={Music} />
-            <Route path="/games" component={Games} />
-            <Route component={Error} />
-          </Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/about" component={About} />
+          <Route path="/projects" component={Projects} />
+          <Route path="/art" component={Art} />
+          <Route path="/music" component={Music} />
+          <Route path="/games" component={Games} />
+          <Route component={null} />
+        </Switch>
       </div>
     </div>
   );

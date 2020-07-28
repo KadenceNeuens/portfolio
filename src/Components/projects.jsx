@@ -1,23 +1,25 @@
-import React, {component} from 'react';
+import React from 'react';
+import {Route, Switch} from 'react-router-dom'
 
-class Projects extends React.Component
+import NavItem from './navItem'
+
+import Project_A from './Projects/project_a'
+import Project_B from './Projects/project_b'
+
+export default function Projects(props)
 {
-    constructor(props)
-    {
-        super(props);
-    }
 
-    render()
-    {
-        // HTML here
-        return (
-            <>
-                <a>
-                    This is the projects page.
-                </a>
-            </>
-        )
-    }
+    return(
+        <>
+            <ul>
+                <NavItem name="Project A" route="/projects/project_a">Project A</NavItem>
+                <NavItem name="Project B" route="/projects/project_b">Project B</NavItem>
+            </ul>
+            <Switch>
+                <Route path="/projects/project_a" component={Project_A}/>
+                <Route path="/projects/project_b" component={Project_B}/>
+                <Route component={null} />
+            </Switch>
+        </>
+    )
 }
-
-export default Projects
