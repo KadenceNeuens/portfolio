@@ -4,9 +4,8 @@ export default function Home()
 {
     return (
         <>
-            <a>
-                This is the home page.
-            </a>
+            <h2>Hello!</h2>
+            <h3>I'm Kadence, and these are my achievements</h3>
         </>
     )
 }

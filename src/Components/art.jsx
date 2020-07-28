@@ -4,9 +4,8 @@ export default function Art()
 {
     return (
         <>
-            <a>
-                This is the art page.
-            </a>
+            <h2>Artwork</h2>
+            <h3>My Artwork</h3>
         </>
     )
 }

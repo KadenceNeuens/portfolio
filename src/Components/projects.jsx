@@ -15,11 +15,13 @@ export default function Projects(props)
                 <NavItem name="Project A" route="/projects/project_a">Project A</NavItem>
                 <NavItem name="Project B" route="/projects/project_b">Project B</NavItem>
             </ul>
-            <Switch>
-                <Route path="/projects/project_a" component={Project_A}/>
-                <Route path="/projects/project_b" component={Project_B}/>
-                <Route component={null} />
-            </Switch>
+            <div className="Entry">
+                <Switch>
+                    <Route path="/projects/project_a" component={Project_A}/>
+                    <Route path="/projects/project_b" component={Project_B}/>
+                    <Route component={null} />
+                </Switch>
+            </div>
         </>
     )
 }

@@ -4,9 +4,8 @@ export default function Music()
 {
     return (
         <>
-            <a>
-                This is the music page.
-            </a>
+            <h2>Music</h2>
+            <h3>This is my music.</h3>
         </>
     )
 }

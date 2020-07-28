@@ -4,9 +4,8 @@ export default function About()
 {
     return (
         <>
-            <a>
-                This is the about page.
-            </a>
+            <h2>About Me</h2>
+            <h3>This is the About page.</h3>
         </>
     )
 }

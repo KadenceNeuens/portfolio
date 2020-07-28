@@ -1,8 +1,11 @@
 import React from 'react';
 
-export default function Project_A(props)
+export default function Portfolio(props)
 {
     return(
-        <p>This is the content for Project A.</p>
+        <>
+            <h3>Portfolio Site</h3>
+            <p>This portfolio will act as an ongoing project as I learn more about building with React.</p>
+        </>
     )
 }
