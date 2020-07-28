@@ -1,23 +1,12 @@
-import React, {component} from 'react';
+import React from 'react';
 
-class Music extends React.Component
+export default function Music()
 {
-    constructor(props)
-    {
-        super(props);
-    }
-
-    render()
-    {
-        // HTML here
-        return (
-            <>
-                <a>
-                    This is the music page.
-                </a>
-            </>
-        )
-    }
+    return (
+        <>
+            <a>
+                This is the music page.
+            </a>
+        </>
+    )
 }
-
-export default Music

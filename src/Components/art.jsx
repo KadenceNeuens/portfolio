@@ -1,23 +1,12 @@
-import React, {component} from 'react';
+import React from 'react';
 
-class Art extends React.Component
+export default function Art()
 {
-    constructor(props)
-    {
-        super(props);
-    }
-
-    render()
-    {
-        // HTML here
-        return (
-            <>
-                <a>
-                    This is the art page.
-                </a>
-            </>
-        )
-    }
+    return (
+        <>
+            <a>
+                This is the art page.
+            </a>
+        </>
+    )
 }
-
-export default Art

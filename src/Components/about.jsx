@@ -1,23 +1,12 @@
-import React, {component} from 'react';
+import React from 'react';
 
-class About extends React.Component
+export default function About()
 {
-    constructor(props)
-    {
-        super(props);
-    }
-
-    render()
-    {
-        // HTML here
-        return (
-            <>
-                <a>
-                    This is the about page.
-                </a>
-            </>
-        )
-    }
+    return (
+        <>
+            <a>
+                This is the about page.
+            </a>
+        </>
+    )
 }
-
-export default About

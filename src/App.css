@@ -9,22 +9,20 @@
 
 .App-header {
   font-family: 'IBM Plex Sans', sans-serif;
-  width: 60%;
-  margin: 8em auto 4em;
+  font-size: 1em;
+  text-shadow: 2px 2px 0px #242424;
   color: white;
+  width: 60%;
+  margin: 2em auto 4em;
 }
 
 .App-body {
   font-family: 'Merriweather', serif;
   font-size: 1em;
+  color: white;
   width: 60%;
   min-height: 100vh;
   margin: 0px auto;
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 ul
