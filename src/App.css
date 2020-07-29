@@ -24,13 +24,57 @@
   width: 60%;
   margin: 0px auto;
   padding-top: 1em;
-  border-top: white solid 1px;
 }
 
 .Entry
 {
   margin: 0px auto;
   padding-top: 1em;
+}
+
+.Nav-Image-Container
+{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  height: 14em;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+
+.Nav-Image-Item
+{
+  position: relative;
+  height: 100%;
+  flex: 0 0 auto;
+}
+
+.Nav-Image
+{
+  height: inherit;
+}
+
+.Nav-Image-Item .Nav-Image-Label
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);;
+  opacity: 0;
+
+  width: 100%;
+  padding: 0.5em 0;
+  text-align: center;
+  color: white;
+}
+
+.Nav-Image-Item:hover .Nav-Image-Label
+{
+  opacity: 1;
 }
 
 ul
