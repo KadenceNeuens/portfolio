@@ -13,7 +13,6 @@ export default function Games(props)
     return(
         <>
             <Carousel data={gameCarouselItems}/>
-            {/* <GamesNav/> */}
             <Switch>
                 <Route path="/games/game_a" component={Game_A}/>
                 <Route path="/games/game_b" component={Game_B}/>
