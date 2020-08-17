@@ -13,12 +13,10 @@ export default function Games(props)
     return(
         <>
             <Carousel data={gameCarouselItems}/>
-            <Switch>
-                <Route path="/games/game_a" component={Game_A}/>
-                <Route path="/games/game_b" component={Game_B}/>
-                <Route path="/games/game_c" component={Game_C}/>
-                <Route component={null} />
-            </Switch>
+            <Route path="/games/game_a" component={Game_A}/>
+            <Route path="/games/game_b" component={Game_B}/>
+            <Route path="/games/game_c" component={Game_C}/>
+            <Route component={null} />
         </>
     )
 }

@@ -15,12 +15,10 @@ export default function Projects(props)
         <>
             <Carousel data={projectCarouselItems}/>
             <div className="Entry">
-                <Switch>
-                    <Route path="/projects/project_a" component={Portfolio}/>
-                    <Route path="/projects/project_b" component={Project_B}/>
-                    <Route path="/projects/project_c" component={Project_C}/>
-                    <Route component={null} />
-                </Switch>
+                <Route path="/projects/project_a" component={Portfolio}/>
+                <Route path="/projects/project_b" component={Project_B}/>
+                <Route path="/projects/project_c" component={Project_C}/>
+                <Route component={null} />
             </div>
         </>
     )

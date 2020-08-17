@@ -19,15 +19,13 @@ function App() {
         <Nav/>
       </header>
       <div className="App-body">
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/art" component={Art} />
-          <Route path="/music" component={Music} />
-          <Route path="/games" component={Games} />
-          <Route component={null} />
-        </Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/art" component={Art} />
+        <Route path="/music" component={Music} />
+        <Route path="/games" component={Games} />
+        <Route component={null} />
       </div>
     </div>
   );
