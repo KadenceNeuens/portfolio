@@ -37,7 +37,7 @@
   position: relative;
   display: flex;
   flex-wrap: nowrap;
-  overflow: hidden;
+  overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
   height: 14em;

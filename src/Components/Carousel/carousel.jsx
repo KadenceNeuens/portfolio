@@ -1,6 +1,7 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
-import { useTrail, animated } from 'react-spring';
+import { useRef } from 'react';
+import { useSpring, useTrail, animated } from 'react-spring';
+import { useDrag } from 'react-use-gesture';
 
 import CarouselItem from './carouselItem';
 
@@ -19,19 +20,33 @@ export default function Carousel(props)
 
     })
 
+    const [{ xy }, setLocation] = useSpring(() => ({ xy: [0 , 0] }))
 
+    const bindDraggable = useDrag(({ offset: [xy] }) =>
+    {
+        setLocation({xy})
+    },
+    {
+        bounds: {right: 0 , left: {}},
+        rubberband: true
+    }
+    )
 
     return (
-        <div className="Nav-Image-Container">
+        <animated.div className="Nav-Image-Container" {...bindDraggable()} 
+        style={{
+            transform: xy.interpolate((x, y) => `translate3d(${x}px, 0, 0)`)
+        }}
+        >
             {
                 easeIn.map((item, index) =>
                     (
-                        <animated.div className="Nav-Image-Item" key={carouselItems[index]} style={item}>
+                        <animated.div className="Nav-Image-Item" key={index} style={item}>
                             <CarouselItem name={carouselItems[index].title} src={carouselItems[index].image} route={carouselItems[index].link}/>
                         </animated.div>
                     )
                 )
             }
-        </div>
+        </animated.div>
     )
 }
