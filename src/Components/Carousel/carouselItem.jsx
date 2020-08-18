@@ -5,7 +5,7 @@ export default function CarouselItem(props) {
 
     return (
         <>
-            <Link className="Nav-Image-Item" to={props.route} draggable = "false">
+            <Link className="Nav-Image-Link" to={props.route} draggable = "false">
                 <img className="Nav-Image" src = {props.src} draggable = "false">
                 </img>
                 <label className="Nav-Image-Label">

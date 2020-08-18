@@ -1,4 +1,5 @@
 import React from 'react';
+import './slider.css'
 import { useRef, useState, useEffect } from 'react';
 import { useSpring, useTrail, animated } from 'react-spring';
 import { useDrag } from 'react-use-gesture';

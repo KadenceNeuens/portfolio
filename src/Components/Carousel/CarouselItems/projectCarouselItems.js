@@ -1,13 +1,13 @@
 export const projectCarouselItems = [
     {
-        title: "Portfolio Site",
+        title: "Image Link Slider",
         image: "/images/placeholder_tile_a.jpg",
-        link: "/projects/project_a",
+        link: "/projects/Image-Link-Slider",
     },
     {
-        title: "Project B",
-        image: "/images/placeholder_tile_b.jpg",
-        link: "/projects/project_b",
+        title: "MIDI Synthesizer",
+        image: "/images/MIDISynth.png",
+        link: "/projects/MIDISynth",
     },
     {
         title: "Project C",
