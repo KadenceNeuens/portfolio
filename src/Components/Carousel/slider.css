@@ -1,6 +1,8 @@
 .Nav-Image
 {
   object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .Nav-Image-Container
