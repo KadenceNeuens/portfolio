@@ -1,7 +1,7 @@
-export const projectCarouselItems = [
+export const projectSliderItems = [
     {
         title: "Image Link Slider",
-        image: "/images/placeholder_tile_a.jpg",
+        image: "/images/ImageLinkSlider.png",
         link: "/projects/Image-Link-Slider",
     },
     {
@@ -33,5 +33,5 @@ export const projectCarouselItems = [
 
 export default 
 {
-    projectCarouselItems
+    projectSliderItems
 }

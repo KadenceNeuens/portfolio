@@ -1,16 +1,17 @@
 import React from 'react';
 import NavItem from './navItem.jsx';
 
-export default function Nav()
+export default function Nav(props)
 {
+
     return (
         <>
             <ul>
-                <NavItem name="About" route="/about"/>
-                <NavItem name="Projects" route="/projects"/>
-                <NavItem name="Art" route="/art"/>
-                <NavItem name="Music" route="/music"/>
-                <NavItem name="Games" route="/games"/>
+                <NavItem handler={props.handler} name="About" route="/about"/>
+                <NavItem handler={props.handler} name="Projects" route="/projects"/>
+                <NavItem handler={props.handler} name="Art" route="/art"/>
+                <NavItem handler={props.handler} name="Music" route="/music"/>
+                <NavItem handler={props.handler} name="Games" route="/games"/>
             </ul>
         </>
     )

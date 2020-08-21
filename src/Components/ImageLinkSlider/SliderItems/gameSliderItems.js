@@ -1,4 +1,4 @@
-export const gameCarouselItems = [
+export const gameSliderItems = [
     {
         title: "Game A",
         image: "/images/placeholder_tile_a.jpg",
@@ -18,5 +18,5 @@ export const gameCarouselItems = [
 
 export default 
 {
-    gameCarouselItems
+    gameSliderItems
 }

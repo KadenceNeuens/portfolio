@@ -1,11 +1,16 @@
 import React from 'react';
+import { useEffect } from 'react';
 
-export default function Home()
+export default function Home(props)
 {
+    
+    const {handler} = props
+    useEffect(() => {
+        handler()
+    })
+
     return (
         <>
-            <h2>Hello!</h2>
-            <h3>I'm Kadence, and these are my achievements</h3>
         </>
     )
 }
