@@ -26,8 +26,8 @@ export default function ImageLinkSlider(props)
 
     // Slider spring configs
     var springConfig = {
-        tension: 100,
-        friction: 15
+        tension: 40,
+        friction: 10
     }
 
     // Default values
@@ -61,7 +61,7 @@ export default function ImageLinkSlider(props)
     });
 
     // Animation for drag
-    const [ { x }, setLocation] = useSpring(() => ({ x: 0, config: springConfig }));
+    const [ { x }, setLocation ] = useSpring(() => ({ x: 0, config: springConfig }));
 
     // bind dragging actions
     const bindDraggable = useDrag(({ offset: [x] }) =>

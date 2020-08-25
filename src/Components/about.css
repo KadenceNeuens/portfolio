@@ -1,0 +1,30 @@
+.Wrapper
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .About
+{
+} */
+
+.Interests
+{
+    font-size: 1em;
+}
+
+.Interests li
+{
+    display: block;
+    padding: 0;
+}
+
+.Socials
+{
+    font-size: 1em;
+    display: inline;
+}
+
+@media screen and (max-width:992px) {
+    .Wrapper { flex-wrap: wrap; }
+}
