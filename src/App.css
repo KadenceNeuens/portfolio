@@ -25,6 +25,7 @@
 {
   font-size: 4em;
   margin: 0;
+  flex-basis: 100%;
 }
 
 .App-header h1:hover
