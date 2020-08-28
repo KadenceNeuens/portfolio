@@ -8,7 +8,7 @@ export default function SliderItem(props) {
     return (
         <>
             <Link className="Nav-Image-Link" to={props.route} style={props.style} draggable = "false">
-                <img className="Nav-Image" src = {props.src} draggable = "false"/>
+                <img className="Nav-Image" src = {props.src} alt = {props.name} draggable = "false"/>
                 {noLabel ? null : <label className="Nav-Image-Label"> {props.name} </label> }
             </Link>
         </>

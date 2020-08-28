@@ -119,8 +119,8 @@ export default function ImageLinkSlider(props)
             </animated.div>
             { noArrow ? null :
             <>
-            <div className="LeftArrow"><animated.div style={leftArrowSpring}><img src={arrow}/></animated.div></div>
-            <div className="RightArrow"><animated.div style={rightArrowSpring}><img src={arrow}/></animated.div></div>
+            <div className="LeftArrow"><animated.div style={leftArrowSpring}><img src={arrow} alt="Left Arrow Icon"/></animated.div></div>
+            <div className="RightArrow"><animated.div style={rightArrowSpring}><img src={arrow} alt="Right Arrow Icon"/></animated.div></div>
             </>
             }
         </div>

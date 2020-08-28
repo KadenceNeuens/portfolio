@@ -1,0 +1,29 @@
+.Gallery
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
+.Section
+{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Section h2
+{
+    text-align: left;
+    flex-basis: 100%;
+}
+.Image-Item
+{
+    object-fit: cover;
+    width: 12em;
+}
+.Image-Item img
+{
+    width: 100%;
+}
