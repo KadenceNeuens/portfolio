@@ -22,6 +22,10 @@
 {
     object-fit: cover;
     width: 12em;
+    background-color: white;
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 .Image-Item img
 {

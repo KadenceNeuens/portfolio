@@ -18,7 +18,7 @@ import PA_RunningStudy from './PixelArt/Running_Colored.gif'
 
 export const galleryItems = [
 {
-    section: "Twitch Emotes for DaveAstro",
+    section: "Twitch Emotes for DaveAstro (2020, Inkscape - Vector)",
     images: [{
         image: LarryHypers,
         caption: "LarryHypers Emote for DaveAstro on Twitch"

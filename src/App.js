@@ -24,7 +24,8 @@ function App(props) {
   }))
 
   const [bodyAnim, setBodyAnim] = useSpring(() => ({
-    opacity: 1
+    opacity: 1,
+    marginBottom: '0em'
   }))
 
   const isHome = () => {
@@ -38,7 +39,8 @@ function App(props) {
         marginTop: '0em'
       }))
       setBodyAnim(() => ({
-        opacity: 0
+        opacity: 0,
+        marginBottom: '0em'
       }))
     }
   }
@@ -51,10 +53,11 @@ function App(props) {
         top: '0%',
         transform: 'translateY(0%)',
         position: 'relative',
-        marginTop: '3em'
+        marginTop: '6em'
       }))
       setBodyAnim(() => ({
-        opacity: 1
+        opacity: 1,
+        marginBottom: '2em'
       }))
     }
   }

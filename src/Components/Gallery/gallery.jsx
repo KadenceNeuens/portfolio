@@ -7,9 +7,10 @@
 
 import React from 'react'
 import { useState } from 'react'
-import { animated, useSpring } from 'react-spring'
+import { animated } from 'react-spring'
 import ItemPreview from './itemPreview'
 import './styles.css'
+import GalleryItem from './galleryItem'
 
 export default function Gallery(props)
 {
@@ -34,6 +35,7 @@ export default function Gallery(props)
 
     return(
         <>
+        <p>Click any image to enlarge. Click anywhere to close preview.</p>
         { imageShown ? (
         <animated.div className="Preview">
             <ItemPreview image={currentPreviewImage} caption={currentPreviewCaption} handler={handler}/>
@@ -41,12 +43,12 @@ export default function Gallery(props)
         
         <div className="Gallery">
             {galleryItems.map((item, index) => (
-                <div className="Section">
+                <div className="Section" key={index}>
                     <h2 key={index}>{item.section}</h2>
                     {item.images.map((current, index) => (
-                        <animated.div className="Image-Item" onClick={() => previewItem(current.image, current.caption)} key={index}>
-                            <img src={current.image} key={index} alt={current.caption}/>
-                        </animated.div>
+                        <div onClick={() => previewItem(current.image, current.caption)} key={index}>
+                            <GalleryItem className="Image-Item" key={index} image={current.image} caption={current.caption}/>
+                        </div>
                     ))}
                 </div>
             ))}

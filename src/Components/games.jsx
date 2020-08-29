@@ -18,6 +18,7 @@ export default function Games(props)
 
     return(
         <>
+            <p>Currently Empty</p>
             <ImageLinkSlider data={gameSliderItems} height="10em" width="20em"/>
             <Route path="/games/game_a" component={Game_A}/>
             <Route path="/games/game_b" component={Game_B}/>

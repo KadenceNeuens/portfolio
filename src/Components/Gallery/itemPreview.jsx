@@ -1,5 +1,5 @@
 import React from 'react';
-import { animated, useSpring } from 'react-spring';
+import { animated } from 'react-spring';
 import './preview.css';
 
 export default function ItemPreview(props)

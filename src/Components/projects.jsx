@@ -13,7 +13,6 @@ export default function Projects(props)
 {
     const {handler} = props
     useEffect(() => {
-        console.log("success")
         handler()
     })
 
