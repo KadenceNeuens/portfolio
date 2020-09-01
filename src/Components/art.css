@@ -1,0 +1,32 @@
+.Apps
+{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2em 0em 1.5em 0em;
+}
+
+.Apps img
+{
+    width: 50px;
+}
+
+.IconSource
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: gray;
+    font-size: 0.5em;
+    width: 100%;
+}
+
+.IconSource a
+{
+    color: gray;
+    text-decoration: none;
+}

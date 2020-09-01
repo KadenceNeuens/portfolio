@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: flex-start;
     width: 100%;
+    height: 100%;
 }
 .Section
 {
@@ -12,22 +13,37 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-bottom: 1em;
+    width: 100%;
+    height: 100%;
 }
 .Section h2
 {
-    text-align: left;
     flex-basis: 100%;
+    border-top: 1px solid white;
+    margin: 0;
+    padding: 1em;
 }
+
+.Image-Item-Wrapper
+{
+    width: 12em;
+    height: 12em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
 .Image-Item
 {
     object-fit: cover;
-    width: 12em;
-    background-color: white;
+    width: 100%;
+    height: 100%;
     border-radius: 1em;
-    padding: 0.5em;
-    margin: 0.5em;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
 }
 .Image-Item img
 {
     width: 100%;
+    height: 100%;
 }

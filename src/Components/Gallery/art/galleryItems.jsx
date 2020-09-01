@@ -1,12 +1,12 @@
 // Twitch Emotes for DaveAstro
-import LarryHypers from './DaveAstro_TwitchEmotes/Larry_Hypers.svg'
-import LarrySip from './DaveAstro_TwitchEmotes/Larry_Sip.svg'
-import LarryToxic from './DaveAstro_TwitchEmotes/Larry_Toxic.svg'
-import LarrySubBase from './DaveAstro_TwitchEmotes/LarrySub_base.svg'
-import LarrySub3mo from './DaveAstro_TwitchEmotes/LarrySub_3mo.svg'
-import LarrySub6mo from './DaveAstro_TwitchEmotes/LarrySub_6mo.svg'
-import LarrySub9mo from './DaveAstro_TwitchEmotes/LarrySub_9mo.svg'
-import LarrySub1yr from './DaveAstro_TwitchEmotes/LarrySub_1yr.svg'
+import LarryHypers from './DaveAstro_TwitchEmotes/Larry_Hypers.png'
+import LarrySip from './DaveAstro_TwitchEmotes/Larry_Sip.png'
+import LarryToxic from './DaveAstro_TwitchEmotes/Larry_Toxic.png'
+import LarrySubBase from './DaveAstro_TwitchEmotes/LarrySub_base.png'
+import LarrySub3mo from './DaveAstro_TwitchEmotes/LarrySub_3mo.png'
+import LarrySub6mo from './DaveAstro_TwitchEmotes/LarrySub_6mo.png'
+import LarrySub9mo from './DaveAstro_TwitchEmotes/LarrySub_9mo.png'
+import LarrySub1yr from './DaveAstro_TwitchEmotes/LarrySub_1yr.png'
 
 // Pixel Art
 import PA_FrogIdle from './PixelArt/Frog_Idle.gif'

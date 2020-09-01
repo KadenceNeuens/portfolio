@@ -35,9 +35,9 @@ export default function About(props)
                         You can find me on the following platforms: 
                     </p>
                     <ul className="Socials">
-                        <li>Github</li>
-                        <li>Instagram</li>
-                        <li>Soundcloud</li>
+                        <li><a href="https://github.com/KadenceNeuens">Github</a></li>
+                        <li><a href="https://www.instagram.com/totakk920/">Instagram</a></li>
+                        <li><a href="https://soundcloud.com/kadencen">Soundcloud</a></li>
                     </ul>
                 </div>
             </div>

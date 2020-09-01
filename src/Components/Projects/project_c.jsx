@@ -4,7 +4,7 @@ export default function Project_C(props)
 {
     return(
         <>
-            <h3>Project C</h3>
+            <h2>Project C</h2>
             <p>This is my project, Project C.</p>
         </>
     )

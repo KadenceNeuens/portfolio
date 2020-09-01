@@ -35,23 +35,26 @@ export default function Gallery(props)
 
     return(
         <>
-        <p>Click any image to enlarge. Click anywhere to close preview.</p>
         { imageShown ? (
         <animated.div className="Preview">
             <ItemPreview image={currentPreviewImage} caption={currentPreviewCaption} handler={handler}/>
         </animated.div>) : null}
         
         <div className="Gallery">
-            {galleryItems.map((item, index) => (
+            {
+            galleryItems.map((item, index) => (
                 <div className="Section" key={index}>
                     <h2 key={index}>{item.section}</h2>
-                    {item.images.map((current, index) => (
+                    {
+                    item.images.map((current, index) => (
                         <div onClick={() => previewItem(current.image, current.caption)} key={index}>
                             <GalleryItem className="Image-Item" key={index} image={current.image} caption={current.caption}/>
                         </div>
-                    ))}
+                    ))
+                    }
                 </div>
-            ))}
+            ))
+            }
         </div>
         </>
     )

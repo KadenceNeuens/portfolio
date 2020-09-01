@@ -4,7 +4,7 @@ export default function Game_B(props)
 {
     return(
         <>
-            <h3>Game B</h3>
+            <h2>Game B</h2>
             <p>This is my second game, Game B!</p>
         </>
     )
