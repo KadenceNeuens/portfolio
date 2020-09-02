@@ -26,7 +26,7 @@ export default function ImageLinkSlider(props)
 
     // Slider spring configs
     var springConfig = {
-        tension: 40,
+        tension: 45,
         friction: 10
     }
 
