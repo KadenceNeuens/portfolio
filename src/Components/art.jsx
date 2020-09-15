@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import Gallery from './Gallery/gallery';
+import { gaPageView } from '../index.js'
 
 import {galleryItems} from './Gallery/art/galleryItems';
 
@@ -16,6 +17,8 @@ import './art.css'
 export default function Art(props)
 {
     
+    useEffect(() => { gaPageView("Art"); }, []);
+
     const {handler} = props
     useEffect(() => {
         handler()

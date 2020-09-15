@@ -1,9 +1,12 @@
 import React from 'react';
 import { useEffect } from 'react';
 import './about.css'
+import { gaPageView } from '../index.js'
 
 export default function About(props)
 {
+
+    useEffect(() => { gaPageView("About"); }, []);
     
     const {handler} = props
     useEffect(() => {

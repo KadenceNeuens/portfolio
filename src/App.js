@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import { Link, Route, Redirect, Switch } from 'react-router-dom';
 import { useSpring, animated } from 'react-spring';
+import { initGoogleAnalytics, gaPageView } from './index.js'
+
+// Page Components
 import Nav from './Components/nav.jsx';
 import Home from './Components/home.jsx';
 import About from './Components/about.jsx';
@@ -12,6 +15,9 @@ import Games from './Components/games.jsx';
 import Error from './Components/error.jsx';
 
 function App(props) {
+
+  useEffect(() => { initGoogleAnalytics(); }, []);
+  useEffect(() => { gaPageView("Home"); }, []);
 
   const [home, setHome] = useState(true)
 

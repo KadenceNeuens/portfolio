@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import { useEffect } from 'react';
+import { gaPageView } from '../index.js'
 
 import ImageLinkSlider from './ImageLinkSlider/imageLinkSlider';
 import {gameSliderItems} from './ImageLinkSlider/SliderItems/gameSliderItems'
@@ -10,6 +11,8 @@ import Game_B from './Games/game_b';
 import Game_C from './Games/game_c';
 export default function Games(props)
 {
+
+    useEffect(() => { gaPageView("Games"); }, []);
 
     const {handler} = props
     useEffect(() => {

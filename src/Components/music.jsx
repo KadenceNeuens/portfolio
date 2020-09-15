@@ -1,8 +1,11 @@
 import React from 'react';
 import { useEffect } from 'react';
+import { gaPageView } from '../index.js'
 
 export default function Music(props)
 {
+
+    useEffect(() => { gaPageView("Music"); }, []);
 
     const {handler} = props
     useEffect(() => {

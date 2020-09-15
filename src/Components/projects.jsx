@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
+import { gaPageView } from '../index.js'
 
 import ImageLinkSlider from './ImageLinkSlider/imageLinkSlider';
 import {projectSliderItems} from './ImageLinkSlider/SliderItems/projectSliderItems'
@@ -11,6 +12,9 @@ import { useEffect } from 'react';
 
 export default function Projects(props)
 {
+
+    useEffect(() => { gaPageView("Projects"); }, []);
+
     const {handler} = props
     useEffect(() => {
         handler()
