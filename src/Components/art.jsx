@@ -5,12 +5,12 @@ import { gaPageView } from '../index.js'
 
 import {galleryItems} from './Gallery/art/galleryItems';
 
-import Illustrator from '../ArtIcons/icons8-adobe-illustrator-50.png';
-import AfterEffects from '../ArtIcons/icons8-adobe-after-effects-50.png';
-import Lightroom from '../ArtIcons/icons8-adobe-lightroom-50.png';
-import Photoshop from '../ArtIcons/icons8-adobe-photoshop-50.png';
-import PremierePro from '../ArtIcons/icons8-adobe-premiere-pro-50.png';
-import Inkscape from '../ArtIcons/icons8-inkscape-50.png';
+import Illustrator from './ArtIcons/icons8-adobe-illustrator-50.png';
+import AfterEffects from './ArtIcons/icons8-adobe-after-effects-50.png';
+import Lightroom from './ArtIcons/icons8-adobe-lightroom-50.png';
+import Photoshop from './ArtIcons/icons8-adobe-photoshop-50.png';
+import PremierePro from './ArtIcons/icons8-adobe-premiere-pro-50.png';
+import Inkscape from './ArtIcons/icons8-inkscape-50.png';
 
 import './art.css'
 

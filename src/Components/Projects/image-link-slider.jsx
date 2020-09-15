@@ -1,10 +1,12 @@
 import React from 'react';
+import ImageLinkSliderPreview from './AnimatedPreviews/ImageLinkSlider_Preview.gif'
 
 export default function ImageLinkSlider(props)
 {
     return(
         <>
             <h2>Image Link Slider</h2>
+            <img src={ImageLinkSliderPreview} alt="Preview animation for Image Link Slider"/>
             <p>A simple image link slider component built for React. Uses react-router-dom for 
                 links, react-use-gesture for drag gesture scrolling, and react-spring for animation. 
                 Easily re-style to fit different use cases.</p>

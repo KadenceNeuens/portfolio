@@ -16,11 +16,14 @@ import Error from './Components/error.jsx';
 
 function App(props) {
 
+  // Google Analytics
   useEffect(() => { initGoogleAnalytics(); }, []);
   useEffect(() => { gaPageView("Home"); }, []);
 
+  // Home state for animation
   const [home, setHome] = useState(true)
 
+  // Animation Springs
   const [title, setTitle] = useSpring(() => ({textShadow: '2px 2px 0 #A27500, 4px 4px 0 #0E1C6F'}));
 
   const [headerAnim, setHeaderAnim] = useSpring(() => ({
@@ -35,6 +38,7 @@ function App(props) {
     margin: '0em 0em 0em 0em'
   }))
 
+  // Handler methods for home header animation
   const isHome = () => {
     if (home === false)
     {

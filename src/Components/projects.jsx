@@ -7,7 +7,7 @@ import {projectSliderItems} from './ImageLinkSlider/SliderItems/projectSliderIte
 
 import ImageLinkSliderPage from './Projects/image-link-slider';
 import MIDISynth from './Projects/MIDISynth';
-import Project_C from './Projects/project_c';
+import RRandallSite from './Projects/rrandall-site';
 import { useEffect } from 'react';
 
 export default function Projects(props)
@@ -26,7 +26,7 @@ export default function Projects(props)
             <div className="Entry">
                 <Route path="/projects/image-link-slider" component={ImageLinkSliderPage}/>
                 <Route path="/projects/midisynth" component={MIDISynth}/>
-                <Route path="/projects/project_c" component={Project_C}/>
+                <Route path="/projects/rrandall-site" component={RRandallSite}/>
                 <Route component={null} />
             </div>
         </>

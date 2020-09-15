@@ -7,9 +7,11 @@
     border-top: 1px solid white;
 }
 
-/* .About
+.About img
 {
-} */
+    width: 16em;
+    border-radius: 2em;
+}
 
 .Interests
 {

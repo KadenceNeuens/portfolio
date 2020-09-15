@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import './about.css'
+import Portrait from './Portrait/portrait.jpg'
 import { gaPageView } from '../index.js'
 
 export default function About(props)
@@ -17,6 +18,7 @@ export default function About(props)
         <>
             <div className="Wrapper">
                 <div className="About">
+                    <img src={Portrait} alt="Portrait of Kadence"/>
                     <p>
                         Hey! I've spent most of my life in front of a computer. I live to create art, software, games, and music.
                         I'm always trying to improve my skills so I can create the best experience possible through every medium I 
