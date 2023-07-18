@@ -24,9 +24,9 @@ jobs:
         uses: actions/checkout@v3
         # Configure AWS Credentials to use OIDC role
       - name: configure aws credentials
-        uses: aws-actions/configure-aws-credentials@v1.7.0
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          role-to-assume: arn:aws:iam::374511054091:role/GithubS3DeploymentRole 
+          role-to-assume: arn:aws:iam::374511054091:role/GithubS3DeploymentRole
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
       - name: Sts GetCallerIdentity
