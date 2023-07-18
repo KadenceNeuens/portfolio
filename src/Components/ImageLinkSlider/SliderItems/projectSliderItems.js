@@ -1,8 +1,14 @@
 import ImageLinkSlider from '../Images/ImageLinkSlider.png';
 import MIDISynth from '../Images/MIDISynth.png';
 import RRandallSite from '../Images/RRandallSite.png';
+import GPSLogDrive from '../Images/GPSLog.png';
 
 export const projectSliderItems = [
+    {
+        title: "GPS Log Drive",
+        image: GPSLogDrive,
+        link: "/projects/GPS-Log-Drive"
+    },
     {
         title: "Image Link Slider",
         image: ImageLinkSlider,

@@ -5,6 +5,7 @@ import { gaPageView } from '../index.js'
 import ImageLinkSlider from './ImageLinkSlider/imageLinkSlider';
 import {projectSliderItems} from './ImageLinkSlider/SliderItems/projectSliderItems'
 
+import GPSLogDrive from './Projects/GPSLogDrive';
 import ImageLinkSliderPage from './Projects/image-link-slider';
 import MIDISynth from './Projects/MIDISynth';
 import RRandallSite from './Projects/rrandall-site';
@@ -24,6 +25,7 @@ export default function Projects(props)
         <>
             <ImageLinkSlider data={projectSliderItems} height="10em" width="20em"/>
             <div className="Entry">
+                <Route path="/projects/gps-log-drive" component={GPSLogDrive}/>
                 <Route path="/projects/image-link-slider" component={ImageLinkSliderPage}/>
                 <Route path="/projects/midisynth" component={MIDISynth}/>
                 <Route path="/projects/rrandall-site" component={RRandallSite}/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageLinkSliderPreview from './AnimatedPreviews/ImageLinkSlider_Preview.gif'
+import ImageLinkSliderPreview from './Images/ImageLinkSlider_Preview.gif'
 
 export default function ImageLinkSlider(props)
 {
