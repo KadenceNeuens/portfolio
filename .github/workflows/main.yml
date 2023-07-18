@@ -22,6 +22,7 @@ jobs:
     steps:
       - name: Git clone the repository
         uses: actions/checkout@v3
+        # Configure AWS Credentials to use OIDC role
       - name: configure aws credentials
         uses: aws-actions/configure-aws-credentials@v1.7.0
         with:
