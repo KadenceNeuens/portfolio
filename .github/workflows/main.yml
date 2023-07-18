@@ -29,7 +29,10 @@ jobs:
           role-to-assume: arn:aws:iam::374511054091:role/GithubS3DeploymentRole 
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ${{ env.AWS_REGION }}
-      - name: Build React App
-        run: npm install && npm run build
-      - name: Deploy app build to S3 bucket
-        run: aws s3 sync ./build/ s3://kadence-portfolio --delete
+      - name: Sts GetCallerIdentity
+        run: |
+          aws sts get-caller-identity
+#       - name: Build React App
+#         run: npm install && npm run build
+#       - name: Deploy app build to S3 bucket
+#         run: aws s3 sync ./build/ s3://kadence-portfolio --delete
